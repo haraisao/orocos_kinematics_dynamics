@@ -42,7 +42,7 @@ ENDIF ( NOT CMAKE_BUILD_TYPE )
 
 SET( KDL_CFLAGS "")
 
-find_package(Eigen 3 QUIET)
+find_package(Eigen3 REQUIRED)
 if(NOT Eigen_FOUND)
   include(${PROJ_SOURCE_DIR}/config/FindEigen3.cmake)
   set(Eigen_INCLUDE_DIR "${EIGEN3_INCLUDE_DIR}")
